@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Анатомия: мужской и женский репродуктивный</title>
+<meta name="description" content="Стильный образовательный сайт о строении полового члена и женской груди — схематические диаграммы и факты." />
+
+<style>
+  :root{
+    --bg:#0f1724;
+    --card:#0b1220;
+    --accent1:linear-gradient(135deg,#7b61ff 0%, #ff7ab6 100%);
+    --glass: rgba(255,255,255,0.04);
+    --muted: #9aa4b2;
+    --white: #f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(123,97,255,0.08), transparent),
+                radial-gradient(900px 400px at 90% 90%, rgba(255,122,182,0.06), transparent),
+                var(--bg);
+    color:var(--white);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:40px 20px;
+  }
+
+  .container{
+    max-width:1100px;
+    margin:0 auto;
+  }
+
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:28px;
+  }
+
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .logo .badge{
+    width:56px;height:56px;border-radius:12px;
+    background:var(--accent1);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 30px rgba(123,97,255,0.14);
+    font-weight:700;font-size:20px;
+  }
+  h1{margin:0;font-size:20px}
+  p.lead{margin:0;color:var(--muted);font-size:14px}
+
+  nav a{
+    color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px;
+  }
+
+  main{
+    display:grid;
+    grid-template-columns: 1fr 360px;
+    gap:28px;
+    align-items:start;
+  }
+
+  /* Left column */
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:14px;
+    padding:18px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    border:1px solid rgba(255,255,255,0.03);
+  }
+
+  .hero{
+    display:flex;gap:18px;align-items:center;
+  }
+  .hero .text{flex:1}
+  .hero h2{margin:0 0 6px 0;font-size:22px}
+  .hero p{margin:0;color:var(--muted);font-size:14px}
+
+  .grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:16px;
+  }
+
+  figure{
+    margin:0;
+    background:var(--glass);
+    padding:8px;border-radius:10px;
+    display:flex;flex-direction:column;align-items:center;
+    gap:8px;
+  }
+  figure img{
+    max-width:100%;
+    height:160px;
+    object-fit:contain;
+    border-radius:8px;
+    background:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(255,255,255,0.02));
+    padding:8px;
+  }
+  figcaption{font-size:13px;color:var(--muted);text-align:center}
+
+  .section{
+    margin-top:18px;
+  }
+  .section h3{margin:0 0 10px 0;font-size:16px}
+  ul.facts{padding-left:18px;color:var(--muted);line-height:1.6;font-size:14px}
+
+  /* Right column / sidebar */
+  aside .card{position:sticky;top:24px}
+  .small{font-size:13px;color:var(--muted)}
+
+  /* modal / lightbox */
+  .lightbox{
+    position:fixed;inset:0;display:none;align-items:center;justify-content:center;
+    background:rgba(2,6,23,0.65);
+    z-index:60;padding:20px;
+  }
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:92%;max-height:88%;border-radius:10px}
+  .close-btn{
+    position:absolute;top:20px;right:20px;background:transparent;border:0;color:var(--white);font-size:22px;cursor:pointer;
+  }
+
+  /* footer */
+  footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px}
+
+  /* responsive */
+  @media (max-width:980px){
+    main{grid-template-columns:1fr}
+    .hero h2{font-size:18px}
+    figure img{height:140px}
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="badge">А+ </div>
+        <div>
+          <h1>Анатомия красиво</h1>
+          <p class="lead">Схематические диаграммы и факты о строении — научно и стильно</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#male">Мужское</a>
+        <a href="#female">Женское</a>
+        <a href="#notes">Примечания</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card hero">
+          <div class="text">
+            <h2 id="intro">О сайте</h2>
+            <p class="small">Этот сайт показывает **анатомические** иллюстрации полового члена и женской груди в образовательных целях. Используйте только корректные диаграммы — для медицины, биологии или дизайна.</p>
+          </div>
+          <div style="width:120px;text-align:center">
+            <!-- декоративный элемент -->
+            <svg width="96" height="96" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="64" height="64" rx="12" fill="#101826"/>
+              <path d="M18 38c4-8 18-8 22 0" stroke="#7b61ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="24" r="6" stroke="#ff7ab6" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="card section" id="male">
+          <h3>Половой член — схема и подписи</h3>
+          <p class="small">Ниже — пример карточки с изображением (замени файл на свою схематичную диаграмму).</p>
+
+          <div class="grid-2">
+            <figure>
+              <!-- Заменить src на реальную диаграмму, например: images/penis-diagram.svg -->
+              <img src="images/penis-diagram.svg" alt="Диаграмма строения полового члена" loading="lazy" data-full="images/penis-diagram-large.svg" />
+              <figcaption>Схема: наружные и внутренние структуры</figcaption>
+            </figure>
+
+            <figure>
+              <!-- Стилизованная иллюстрация — замените в папке images -->
+              <img src="images/penis-stylized.png" alt="Стилизация — строение" loading="lazy" data-full="images/penis-stylized-large.png" />
+              <figcaption>Стилизованная иллюстрация (образовательная)</figcaption>
+            </figure>
+          </div>
+
+          <div style="margin-top:12px">
+            <ul class="facts">
+              <li><strong>Кожа и кожа головки:</strong> основные внешние части.</li>
+              <li><strong>Кавернозные и губчатые тела:</strong> отвечают за эрекцию (анатомический термин).</li>
+              <li><strong>Уретра:</strong> канал, проходящий внутри губчатого тела.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card section" id="female">
+          <h3>Женская грудь — схема и вариации</h3>
+          <p class="small">Грудь состоит из ткани, молочных протоков, жировой ткани и соска. Ниже — варианты диаграмм (используй схематичные/медицинские изображения).</p>
+
+          <div class="grid-2">
+            <figure>
+              <img src="images/breast-diagram.svg" alt="Анатомическая схема женской груди" loading="lazy" data-full="images/breast-diagram-large.svg" />
+              <figcaption>Анатомическая диаграмма: протоки и ткани</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/breast-stylized.png" alt="Стилизованная иллюстрация груди" loading="lazy" data-full="images/breast-stylized-large.png" />
+              <figcaption>Стилизованная образовательная иллюстрация</figcaption>
+            </figure>
+          </div>
+
+          <div style="margin-top:12px">
+            <ul class="facts">
+              <li><strong>Молочные протоки:</strong> транспортируют молоко к соску.</li>
+              <li><strong>Грудная железа и жировая ткань:</strong> определяют форму и объём.</li>
+              <li><strong>Сосок и ареола:</strong> внешние ориентиры, важные в медицинской диагностике.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card section" id="notes">
+          <h3>Примечания по картинкам и лицензиям</h3>
+          <p class="small">Рекомендации по изображениям:</p>
+          <ul class="facts">
+            <li>Используй медицинские диаграммы (Wikimedia Commons — анатомические SVG/PNG с подходящей лицензией).</li>
+            <li>Если нужны стилизованные иллюстрации — ищи на Pexels/Unsplash/Freepik, но проверяй лицензию для публикации.</li>
+            <li>Для образовательного сайта хорошо подходят векторные диаграммы (SVG) — они масштабируются без потери качества.</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Быстрые действия</h3>
+          <p class="small">Шаблон уже содержит:</p>
+          <ul class="facts">
+            <li>Адаптивную карточную вёрстку</li>
+            <li>Лайтбокс для увеличения картинок (клик по картинке)</li>
+            <li>Места для замены изображений — папка <code>images/</code></li>
+          </ul>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0" />
+
+          <p class="small"><strong>Как заменить картинку</strong> — помести нужный файл в папку <code>images/</code> и переименуй (или укажи прямой URL в атрибуте <code>src</code>).</p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Лайфхак: доступность</h3>
+          <p class="small">Добавляй понятные <code>alt</code> и <code>figcaption</code>. Для научных материалов указывай источник/лицензию под изображением.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2025 — Образовательный макет. Заменяй изображения на соответствующие по лицензии и тематике.</p>
+    </footer>
+  </div>
+
+  <!-- Лайтбокс -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <button class="close-btn" id="lbClose" aria-label="Закрыть">&times;</button>
+    <img id="lbImg" src="" alt="" />
+  </div>
+
+<script>
+  // Простой лайтбокс: кликаем по картинке — открываем крупно.
+  document.querySelectorAll('figure img').forEach(img=>{
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      const src = img.dataset.full || img.src;
+      const alt = img.alt || '';
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lbImg');
+      lbImg.src = src;
+      lbImg.alt = alt;
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden','false');
+    });
+  });
+
+  document.getElementById('lbClose').addEventListener('click', ()=>{
+    const lb = document.getElementById('lightbox');
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden','true');
+    document.getElementById('lbImg').src = '';
+  });
+
+  // Закрыть при клике по фону
+  document.getElementById('lightbox').addEventListener('click', (e)=>{
+    if(e.target.id === 'lightbox') {
+      document.getElementById('lbClose').click();
+    }
+  });
+
+  // Закрыть по Escape
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') {
+      const lb = document.getElementById('lightbox');
+      if(lb.classList.contains('open')) document.getElementById('lbClose').click();
+    }
+  });
+</script>
+</body>
+</html>
